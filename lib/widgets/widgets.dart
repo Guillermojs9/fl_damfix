@@ -1,0 +1,1 @@
+export 'package:fl_damfix/widgets/card_swiper.dart';

@@ -1,5 +1,5 @@
-import 'package:fl_damfix/screens/details_screen.dart';
-import 'package:fl_damfix/screens/home_screen.dart';
+import 'package:fl_damfix/screens/screens.dart';
+import 'package:fl_damfix/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -10,12 +10,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'DAMFLIX',
-        initialRoute: 'home',
-        routes: {
-          'home': (context) => const HomeScreen(),
-          'details': (context) => const DetailsScreen(),
-        });
+      debugShowCheckedModeBanner: false,
+      title: 'DAMFLIX',
+      initialRoute: 'home',
+      routes: {
+        'home': (context) => const HomeScreen(),
+        'details': (context) => const DetailsScreen(),
+      },
+      theme: AppTheme.lightTheme,
+    );
   }
 }

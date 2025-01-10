@@ -1,3 +1,4 @@
+import 'package:fl_damfix/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -5,10 +6,17 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: const Center(
-        child: Text('Home Screen'),
-      )
-    );
+    return Scaffold(
+        appBar: AppBar(
+          title: const Text('DAMFLIX'),
+          actions: [
+            IconButton(onPressed: () {}, icon: const Icon(Icons.search))
+          ],
+        ),
+        body: const Column(
+          children: [
+            CardSwiper(),
+          ],
+        ));
   }
 }
