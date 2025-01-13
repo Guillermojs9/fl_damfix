@@ -18,14 +18,15 @@ class CardSwiper extends StatelessWidget {
           itemHeight: size.height * 0.9,
           itemBuilder: (context, index) {
             return GestureDetector(
-              onTap: () => Navigator.pushNamed(context, 'details', arguments: 'movie-instance'),
+              onTap: () => Navigator.pushNamed(context, 'details',
+                  arguments: 'movie-instance'),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(20),
                 child: const FadeInImage(
                     fit: BoxFit.cover,
                     placeholder: AssetImage('assets/no-image.jpg'),
                     image: NetworkImage(
-                        'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.kolpaper.com%2Fwp-content%2Fuploads%2F2024%2F11%2FChill-Guy-Wallpaper-3.jpg&f=1&nofb=1&ipt=4240395fc941735975f02aee578ae80390e9ddb06c9b97cc14f3ff5484da25fc&ipo=images')),
+                        'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fyp4CDOVpVmNwiPoZKQeFCpW8CFo.jpg&f=1&nofb=1&ipt=09231573f06ba9ff49ad01178017b2561ff12e983a7e1686698d927db6c9e7fa&ipo=images')),
               ),
             );
           },
